@@ -26,3 +26,13 @@ AND JOB_CODE = ‘500’
 ALTER TABLE employee
 ADD EMP_PCT int,
 ADD PROJ_NUM INT(5);
+insert into employee(EMP_PCT,PROJ_NUM) values('10','2'),
+('10','2'),
+('10','2'),
+('10','2'),
+('10','2'),
+('10','2'),
+('10','2'),
+('10','2'),
+('10','2');
+
