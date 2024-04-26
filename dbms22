@@ -1,0 +1,12 @@
+DECLARE
+    v_number NUMBER;
+BEGIN
+    -- Get user input
+    v_number := &input_number; -- Prompt for user input
+
+    IF MOD(v_number, 2) = 0 THEN
+        DBMS_OUTPUT.PUT_LINE(v_number || ' is even');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE(v_number || ' is odd');
+    END IF;
+END;
