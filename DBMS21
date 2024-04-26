@@ -1,0 +1,28 @@
+create table employee(
+EMP_NUM int,
+EMP_LNAME varchar(255),
+EMP_FNAME varchar(255),
+EMP_INITIAL varchar(5),
+EMP_HIREDATE varchar(30),
+JOB_CODE int(5)
+);
+insert into employee values('101','News', 'John', 'G','08-NOV-00','502');
+insert into employee values('101','News', 'John', 'G','08-NOV-00','502');
+insert into employee values('101','News', 'John', 'G','08-NOV-00','502');
+insert into employee values('101','News', 'John', 'G','08-NOV-00','502');
+insert into employee values('101','News', 'John', 'G','08-NOV-00','502');
+insert into employee values('101','News', 'John', 'G','08-NOV-00','502');
+insert into employee values('101','News', 'John', 'G','08-NOV-00','502');
+insert into employee values('101','News', 'John', 'G','08-NOV-00','502');
+insert into employee values('101','News', 'John', 'G','08-NOV-00','502');
+
+DELETE FROM employee
+WHERE EMP_LNAME = ‘Smithfield’
+AND EMP_FNAME = ‘William’
+AND EMP_HIREDATE = ‘22-June-04’
+AND JOB_CODE = ‘500’
+;
+
+ALTER TABLE employee
+ADD EMP_PCT int,
+ADD PROJ_NUM INT(5);
