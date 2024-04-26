@@ -1,0 +1,27 @@
+create table salesman(
+id int,
+name varchar(255),
+city varchar(255),
+commission float(5)
+);
+insert into salesman values('5001','James Hoog', 'New York', '0.15');
+insert into salesman values('5002','nail knite', 'paris', '0.13');
+insert into salesman values('5005','Pit alex', 'london', '0.11');
+insert into salesman values('5006','McLyon', 'paris', '0.14');
+insert into salesman values('5007','paul adam', 'rome', '0.13');
+insert into salesman values('5003','lausen hen', 'san jose', '0.12');
+create table customer(
+id int,
+name varchar(255),
+city2 varchar(255),
+grade int,
+salesman_ID int
+);
+insert into customer values('3002','Nick Rimonda', 'New York', '100', '5001');
+insert into customer values('3007','Brad Davis', 'New York', '200', '5001');
+insert into customer values('3005','Graham Zusi', 'california', '200', '5002');
+insert into customer values('3008','Julian Green', 'london', '300', '5002');
+insert into customer values('3004','Fabian Johnson', 'paris', '300', '5006');
+insert into customer values('3009','geoff cameron', 'berlin', '100', '5003');
+insert into customer values('3003','jozy altidor', 'moscow', '200', '5007');
+SELECT id,name  FROM salesman WHERE city='london' UNION SELECT id ,name  FROM customer WHERE city2='london';
